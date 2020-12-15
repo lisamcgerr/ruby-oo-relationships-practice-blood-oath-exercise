@@ -13,9 +13,9 @@ follower1 = Follower.new("name10", 7, "life_motto1")
 follower2 = Follower.new("name11", 45, "life_motto2")
 follower3 = Follower.new("name12", 67, "life_motto3")
 
-blood_oath1 = BloodOath.new(cult1,follower1)
+#blood_oath1 = BloodOath.new(cult1,follower1)
 blood_oath2 = BloodOath.new(cult2,follower2)
-blood_oath3 = BloodOath.new(cult3,follower3)
+blood_oath3 = BloodOath.new(cult3,follower2)
 
 
 
