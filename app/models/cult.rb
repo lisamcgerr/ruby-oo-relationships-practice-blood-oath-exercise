@@ -44,4 +44,29 @@ class Cult
     def self.find_by_founding_year(founding_year)
         self.all.select {|cult_instance|cult_instance.founding_year == founding_year}
     end
+
+    #returns to blood_oath_instances the cults a  is in
+    #returning an array of cult's followers
+    def followers
+        BloodOath.all.select {|blood_oath_instance| blood_oath_instance.cult == self}
+    end
+   
+    #returns a Float that is the average age of this cult's followers
+    def average_age
+        total = 0
+        self.followers.age.sum {|cult_follower_ages| cult_follower_ages += total} /self.followers.age.count
+        #array follower.age = sum / self.follower.count
+    end
+
+    def my_followers_mottos
+
+    end
+
+    def self.least_popular
+
+    end
+
+    def self.most_common_location
+
+    end
 end

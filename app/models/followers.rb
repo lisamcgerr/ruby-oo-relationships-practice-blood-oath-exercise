@@ -16,6 +16,7 @@ class Follower
     end
 
     #returns to blood_oath_instances the follower is in
+    #returning an array of follower's cults
     def cults 
         BloodOath.all.select {|blood_oath_instance| blood_oath_instance.follower == self}
     end
