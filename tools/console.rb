@@ -4,19 +4,20 @@ def reload
   load 'config/environment.rb'
 end
 
-cult1 = Cult.new("name1", "location1", 2010, "slogan1")
-cult2 = Cult.new("name2", "location2", 2011, "slogan2")
-cult3 = Cult.new("name3", "location3", 2012, "slogan3")
+lolz_catz = Cult.new("LoLzCatz", "egypt", 1984, "I haz chezburg")
+murder_train = Cult.new("Murder_Train", "nevada", 1892, "So you decided to ride this train")
+unicorn_eye = Cult.new("Unicorn_Eye", "Europa", 1412, "it sees your soul")
 
 
-follower1 = Follower.new("name10", 7, "life_motto1")
-follower2 = Follower.new("name11", 45, "life_motto2")
-follower3 = Follower.new("name12", 67, "life_motto3")
+cindy = Follower.new("cindy", 7, "im 7!")
+billy_the_kid = Follower.new("billy_the_kid", 45, "kill or be killed")
+ralph = Follower.new("ralph", 67, "i choo choo choose you")
 
-#blood_oath1 = BloodOath.new(cult1,follower1)
-blood_oath2 = BloodOath.new(cult2,follower2)
-blood_oath3 = BloodOath.new(cult3,follower2)
-
+#blood_oath = BloodOath.new(cult, follower, initiation_date)
+blood_oath_the_first = BloodOath.new(unicorn_eye, cindy, "1623-02-15" )
+blood_oath_the_reckoning = BloodOath.new(lolz_catz, billy_the_kid, "1994-10-31")
+blood_oath_scanner_like_shit = BloodOath.new(murder_train, ralph, "1904-05-22")
+blood_oath_whatever = BloodOath.new(murder_train, cindy, "1952-06-15-")
 
 
 
